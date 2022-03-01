@@ -4,7 +4,6 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.tweens.FlxTween;
-import js.html.svg.Angle;
 
 class PlayState extends FlxState
 {
@@ -22,6 +21,7 @@ class PlayState extends FlxState
 		sprite.y = -50;
 		add(sprite);
 
+		// Makes the sprite move around
 		FlxTween.tween(sprite, {
 			x: FlxG.width - sprite.width,
 			y: FlxG.height - sprite.height,
